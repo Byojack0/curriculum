@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yonatan Guzmán - Tecnologo en Informática</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>YONATAN GUZMÁN</h1>
+            <p class="tagline">Tecnologo en Informática | Especialista en Telecomunicaciones</p>
+            <div class="contact-info" role="contentinfo" aria-label="Información de contacto">
+                <div class="contact-item">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    <span>849.861.1074 | 809.653.0958</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <span>guzman1267@outlook.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <span>Santo Domingo Norte, R.D.</span>
+                </div>
+            </div>
+            <div class="social-links" aria-label="Redes sociales">
+                <a href="https://www.linkedin.com/in/yonatan-guzman" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <a href="{{ url_for('static', filename='Yonatan_Guzman_CV.pdf') }}" download class="btn-download" aria-label="Descargar CV">
+                <i class="fas fa-download"></i> Descargar CV
+            </a>
+        </div>
+    </header>
+
+    <main class="container" role="main">
+        <section id="about" aria-labelledby="about-title">
+            <h2 id="about-title">PERFIL PROFESIONAL</h2>
+            <p>Tecnologo en Informática con especialización en telecomunicaciones y desarrollo de software. Profesional con amplia experiencia en ventas técnicas, atención al cliente y diseño de redes FTTH. Capacidad para liderar equipos y gestionar proyectos tecnológicos complejos.</p>
+        </section>
+
+        <section id="experience" aria-labelledby="experience-title">
+            <h2 id="experience-title">EXPERIENCIA LABORAL</h2>
+            
+            <article class="job" aria-label="Técnico de Telecomunicaciones en Similmites">
+                <h3 class="job-title">TÉCNICO DE TELECOMUNICACIONES</h3>
+                <div class="company">Similmites</div>
+                <div class="job-period">Julio 2022 - Actualidad</div>
+                <div class="job-location">Santo Domingo, Distrito Nacional, República Dominicana</div>
+                <ul>
+                    <li>Instalación y mantenimiento de redes de telecomunicaciones</li>
+                    <li>Configuración de equipos de red y solución de problemas técnicos</li>
+                    <li>Atención directa a clientes corporativos</li>
+                </ul>
+            </article>
+            
+            <article class="job" aria-label="Vendedor en Tienda DCM">
+                <h3 class="job-title">VENDEDOR</h3>
+                <div class="company">Tienda DCM</div>
+                <div class="job-period">Septiembre 2020 - Junio 2022</div>
+                <div class="job-location">República Dominicana</div>
+                <ul>
+                    <li>Ventas de productos tecnológicos y electrónicos</li>
+                    <li>Asesoramiento técnico a clientes</li>
+                    <li>Gestión de inventario</li>
+                </ul>
+            </article>
+            
+            <article class="job" aria-label="Operador de Telemarketing en Claro Puerto Rico">
+                <h3 class="job-title">OPERADOR DE TELEMARKETING</h3>
+                <div class="company">Claro Puerto Rico</div>
+                <div class="job-period">Enero 2021 - Mayo 2022</div>
+                <div class="job-location">Santo Domingo, República Dominicana</div>
+                <ul>
+                    <li>Atención al cliente vía telefónica</li>
+                    <li>Venta de servicios de telecomunicaciones</li>
+                    <li>Solución de problemas técnicos remotos</li>
+                </ul>
+            </article>
+            
+            <article class="job" aria-label="Asesor de Ventas en Banesco Banco Universal">
+                <h3 class="job-title">ASESOR DE VENTAS</h3>
+                <div class="company">Banesco Banco Universal</div>
+                <div class="job-period">Febrero 2021 - Octubre 2021</div>
+                <div class="job-location">República Dominicana</div>
+                <ul>
+                    <li>Venta de productos bancarios</li>
+                    <li>Asesoramiento financiero</li>
+                    <li>Gestión de cartera de clientes</li>
+                </ul>
+            </article>
+            
+            <article class="job" aria-label="Diseñador FTTH en LPS Ingeniería">
+                <h3 class="job-title">DISEÑADOR FTTH</h3>
+                <div class="company">LPS Ingeniería</div>
+                <div class="job-period">Enero 2018 - Febrero 2019</div>
+                <div class="job-location">República Dominicana</div>
+                <ul>
+                    <li>Diseño de redes de fibra óptica hasta el hogar</li>
+                    <li>Elaboración de planos técnicos</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="education" aria-labelledby="education-title">
+            <h2 id="education-title">FORMACIÓN ACADÉMICA</h2>
+            
+            <article class="education-item" aria-label="Ingeniería Informática Licenciatura en UTEL Universidad">
+                <h3 class="education-title">INGENIERÍA INFORMÁTICA | LICENCIATURA</h3>
+                <div class="company">UTEL Universidad</div>
+                <div class="education-period">Junio 2024</div>
+                <ul>
+                    <li>Especialización en gestión de proyectos tecnológicos</li>
+                </ul>
+            </article>
+            
+            <article class="education-item" aria-label="Tecnólogo en Software en ITLA">
+                <h3 class="education-title">TECNÓLOGO EN SOFTWARE</h3>
+                <div class="company">ITLA</div>
+                <ul>
+                    <li>Metodologías de desarrollo de software</li>
+                    <li>Tecnologías emergentes en la industria</li>
+                    <li>Gestión eficiente de proyectos tecnológicos</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-title">
+            <h2 id="skills-title">HABILIDADES TÉCNICAS</h2>
+            <div class="skills-container">
+                <span class="skill">Python</span>
+                <span class="skill">Java</span>
+                <span class="skill">C++</span>
+                <span class="skill">HTML/CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Bases de Datos</span>
+                <span class="skill">Redes FTTH</span>
+                <span class="skill">Cisco</span>
+                <span class="skill">Packet Tracer</span>
+                <span class="skill">Microsoft Office</span>
+                <span class="skill">Diseño Web</span>
+                <span class="skill">Telecomunicaciones</span>
+                <span class="skill">Atención al Cliente</span>
+                <span class="skill">Ventas Técnicas</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Yonatan Guzmán - Todos los derechos reservados</p>
+        <p>Contacto: guzman1267@outlook.com | <a href="https://www.linkedin.com/in/yonatan-guzman" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
